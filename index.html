@@ -1,21 +1,105 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
     <form action="https://www.w3schools.com/" method="post">
-        <section class="acesso">
+        <fieldset>
+            <legend>Acesso</legend>
 
-        </section>
+            <label for="date">Data:</label>
+            <input type="date" name="date"><br><br>
+            
+            <label for="user">Usuário:</label>
+            <input type="text" name="user" required><br><br>
+            
+            <label for="password">Password:</label>
+            <input type="password" name="password" required>
+        </fieldset>
 
-        <section class="dados">
+        <fieldset>
+            <legend>Dados pessoais</legend>
 
-        </section>
+            <label for="name">Nome:</label>
+            <input type="name" name="name"><br><br>
 
-        section.
+            <label for="adress">Endereço:</label>
+            <input type="text" name="adress">
+            <label for="number">Número:</label>
+            <input type="text" name="number">
+            <label for="complemento">Complemento:</label>
+            <input type="text" name="complemento"><br><br>
+
+            <label for="city">Cidade:</label>
+            <input type="text" name="city">
+            
+            <label for="state">Estado:</label>
+            <select name="state" id="state">
+                <option value="Acre">Acre</option>
+                <option value="Alagoas">Alagoas</option>
+                <option value="Amapá">Amapá</option>
+                <option value="Amazonas">Amazonas</option>
+                <option value="Bahia">Bahia</option>
+                <option value="Ceará">Ceará</option>
+                <option value="Distrito Federal">Distrito Federal</option>
+                <option value="Espirito Santo">Espirito Santo</option>
+                <option value="Goiás">Goiás</option>
+                <option value="Maranhão">Maranhão</option>
+                <option value="Mato Grosso">Mato Grosso</option>
+                <option value="Mato Grosso do Sul">Mato Grosso do Sul</option>
+                <option value="Minas Gerais">Minas Gerais</option>
+                <option value="Pará">Pará</option>
+                <option value="Paraíba">Paraíba</option>
+                <option value="Paraná">Paraná</option>
+                <option value="Pernambuco">Pernambuco</option>
+                <option value="Rio Grande do Norte">Rio Grande do Norte</option>
+                <option value="Rio Grande do Sul">Rio Grande do Sul</option>
+                <option value="Rondônia">Rondônia</option>
+                <option value="Roraima">Roraima</option>
+                <option value="Santa Catarina">Santa Catarina</option>
+                <option value="São Paulo">São Paulo</option>
+                <option value="Sergipe">Sergipe</option>
+                <option value="Tocantins">Tocantins</option>
+            </select>
+
+            <label for="cep">CEP:</label>
+            <input type="text" name="cep" maxlength="8"><br><br>
+
+            <label for="genero">Gênero:</label>
+            <input type="radio" id="masculino" name="genero" value="masculino">
+            <label for="masculino">Masculino</label>
+            <input type="radio" id="feminino" name="genero" value="feminino">
+            <label for="feminino">Feminino</label>
+            <input type="radio" id="outro" name="genero" value="outro">
+            <label for="outro">Prefiro não falar</label><br><br>
+            
+            <label for="cursos">Curso:</label>
+            <input type="checkbox" id="ads" name="cursos[]" value="ads">
+            <label for="ads">ADS</label>
+            <input type="checkbox" id="jogos" name="cursos[]" value="jogos">
+            <label for="jogos">Jogos</label>
+            <input type="checkbox" id="gestao de ti" name="cursos[]" value="gestao de ti">
+            <label for="gestao de ti">Gestão de TI</label>
+            <input type="checkbox" id="banco de dados" name="cursos[]" value="banco de dados">
+            <label for="banco de dados">Banco de Dados</label><br><br>
+
+            <label for="modelo">Modelo:</label>
+            <input type="radio" id="presencial" name="modelo[]" value="presencial">
+            <label for="presencial">Presencial</label>
+            <input type="radio" id="semi-presencial" name="modelo[]" value="semi-presencial">
+            <label for="semi-presencial">Semi-Presencial</label>
+            <input type="radio" id="ead" name="modelo[]" value="ead">
+            <label for="ead">EAD</label><br>
+
+        </fieldset>
+
     </form>
 </body>
+
 </html>
