@@ -1,0 +1,55 @@
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(#ffeff2, #ffd0d8, #ffc0cb);
+}
+
+.titulo {
+    margin-top: 40px;
+    color: #2b265c;
+}
+
+p {
+    margin: 0 0 40px 0;
+}
+
+form {
+    width: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+fieldset {
+    color: #000000;
+}
+
+.acesso {
+    width: auto;
+    height: 120px;
+    margin-bottom: 40px;
+}
+
+.dados {
+    height: 235px;
+    width: auto;
+}
+
+.botao {
+    height: 35px;
+    width: 200px;
+    margin-top: 50px;
+    display: block;
+    align-self: center;
+    cursor: pointer;
+    border: 1px solid;
+    border-radius: 5px;
+    color: #2b265c;
+}
+
+.botao:hover {
+    background-color: #edd5ff;
+}
